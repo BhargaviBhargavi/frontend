@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Random color</title>
+        <style>
+            .smallDiv{
+                width:200px;
+                height: 200px;
+                border: 2px solid black;
+
+            }
+            #button{
+                padding: 10px;
+                margin: 20px 70px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bigDiv">
+            <div class="smallDiv"></div>
+            <button id="button">button</button>
+        </div>
+
+    </body>
+    <script>
+        let div=document.querySelector(".smallDiv")
+        let button=document.querySelector("#button")
+        button.onclick=function()
+        {
+                div.style.backgroundColor="yellow";
+            
+        }
+        
+    </script>
+</html>
