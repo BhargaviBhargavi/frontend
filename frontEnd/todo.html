@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>TODO List</title>
+</head>
+<body>
+    <div>
+            <input class="input" type="text"></input>
+            <button class="btn">ADD</button>
+            <button class="button">DELETE</button>
+    </div>
+    <div class="display"></div>
+</body>
+<script>
+    let button=document.querySelector(".btn");
+button.onclick=function(){
+    let search=document.querySelector(".input").value;
+    
+    if(search===""){
+        alert("you write something");
+    }else{
+        
+        let div=document.createElement("div");
+        let display=document.querySelector(".display");
+       
+        div.append(search);
+
+       display.append(div);
+    }
+}
